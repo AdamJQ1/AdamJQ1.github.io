@@ -1,7 +1,5 @@
 ---
 title: Block Diagram
-tags: 
--draft
 ---
 
 # Block Diagram
