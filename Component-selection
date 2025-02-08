@@ -324,81 +324,55 @@
                     <tr>
                         <td>
                             ADPL44002AUJZ-3.3-R7 </td>
-                        <td><img src="assets/images/" alt="AD Regulator" class="small-image">
+                        <td><img src="assets/images/ADPL44002AUJZ-R7_SPL.jpeg" alt="AD Regulator" class="small-image">
                         </td>
                         <td>
                             <ul>
-                                <li>Reliable</li>
-                                <li>Used through-hole version in previous course</li>
-                                <li>Minimal supporting hardware</li>
-                                <li>Fixed output at microcontroller voltage</li>
-                                <li>Output current not significantly higher than required</li>
-                                <li>Excellent documentation and customer support</li>
+                                <li>Fixed output</li>
+                                <li>Can handle up to 40V input</li>
+                                <li>Lower cost than other option</li>
+                               
                             </ul>
                         </td>
                         <td>
                             <ul>
-                                <li>Significantly more expensive than alternatives</li>
-                                <li>Many NC Pins contribute to footprint, but not functionality</li>
+                                <li>more complex circuit </li>
+                                <li>Many support components needed</li>
                             </ul>
                         </td>
                         <td>
                             <a
-                                href="https://www.digikey.com/en/products/detail/texas-instruments/LM2594HVMX-3-3-NOPB/366821">
+                                href="https://www.mouser.com/ProductDetail/Analog-Devices/ADPL44002AUJZ-3.3-R7?qs=%252BXxaIXUDbq3bLG2Aqffs8Q%3D%3D">
                                 <div class="digikey-link"></div>
                             </a>
                         </td>
                     </tr>
                     <tr>
-                        <td>MC34063ABD-TR</td>
-                        <td><img src="media/Component_Selection/STRegulator.bmp" alt="STRegulator" class="small-image">
+                        <td>REG1117-3.3</td>
+                        <td><img src="assets/images/REG1117.jpeg" alt="TI Regulator" class="small-image">
                         </td>
                         <td>
                             <ul>
-                                <li>Used regularly at my workplace for production systems</li>
-                                <li>Inexpensive</li>
-                                <li>Variable voltage output</li>
+                                <li>Small, simple circuit</li>
+                                <li>Only requires 2 10uF capacitors</li>
+                                <li>fixed output</li>
+                                <li>Only 3 connections</li>
                             </ul>
                         </td>
                         <td>
                             <ul>
-                                <li>Capable of providing far higher current than required</li>
-                                <li>Requires extra support hardware for desired voltage</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <a
-                                href="https://www.digikey.com/en/products/detail/stmicroelectronics/MC34063ABD-TR/1038906">
-                                <div class="digikey-link"></div>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>MCP1603T-330I/OS</td>
-                        <td><img src="media/Component_Selection/miniRegulator.bmp" alt="Mini-Regulator"
-                                class="small-image">
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Extremely small</li>
-                                <li>Very few pins to solder</li>
-                                <li>Very little external support hardware</li>
-                                <li>Output amperage only 150% required</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Marginally more expensive than alternatives</li>
-                                <li>Maximum voltage input only 5.5V</li>
+                                <li>low max input voltage</li>
+                                <li>vey small, difficult to solder</li>
                             </ul>
                         </td>
                         <td>
                             <a
-                                href="https://www.digikey.com/en/products/detail/microchip-technology/MCP1603T-330I-OS/1098431">
+                                href="https://www.digikey.com/en/products/detail/texas-instruments/REG1117-3.3/251212?gQT=1">
                                 <div class="digikey-link"></div>
                             </a>
                         </td>
                     </tr>
+                    
                 </tbody>
             </table>
 
