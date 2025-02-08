@@ -217,7 +217,7 @@
                 <tbody>
                     <tr>
                         <td>PIC18F47Q10T -I/PT</td>
-                        <td><img src="media/Component_Selection/pic.bmp" alt="PIC Microcontroller" class="small-image">
+                        <td><img src="assets/images/pic18f47q10-t4x.png" alt="PIC Microcontroller" class="small-image">
                         </td>
                         <td>
                             <ul>
@@ -244,7 +244,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>ATMEGA328PB-MU</td>
+                        <td>AT89S52-24AUR</td>
                         <td><img src="media/Component_Selection/atmel.bmp" alt="PIC Microcontroller"
                                 class="small-image"></td>
                         <td>
