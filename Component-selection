@@ -473,30 +473,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>A3908EEETR-T</td>
-                        <td><img src="media/Component_Selection/A3908EEETR.bmp" alt="Allegro Motor Driver"
-                                class="small-image">
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Very cheap </li>
-                                <li>Operates at microcontroller voltage</li>
-                                <li>Configuration over SPI</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Requires reflow oven to solder </li>
-                                <li>Low load capabilities, which may be an issue depending on motor</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <a
-                                href="https://www.digikey.com/en/products/detail/allegro-microsystems/A3908EEETR-T/1991942">
-                                <div class="digikey-link"></div>
-                            </a>
-                        </td>
-                    </tr>
+                        
                 </tbody>
             </table>
 
@@ -512,16 +489,14 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>L6470H</td>
-                        <td><img src="media/Component_Selection/l6479h.bmp" alt="MotorDriver" class="small-image">
+                        <td>
+                            RK1191124001
+                            </td>
+                        <td><img src="assets/images/RK1191110001.png" alt="RK1191124001 potentiometer" class="small-image">
                         </td>
-                        <td>None of the options are particularly great, but looking around (And given my understanding
-                            of the requirements),
-                            it appears that this isn't a common issue. Generally stepper motors are controlled by
-                            daughter-boards or utilize
-                            onboard hardware for interfacing, which is against the rules of the assignment. If the rules
-                            change or are redefined
-                            I will likely replace this with an easier option to save time on fabrication.
+                        <td>Surface mount potentiometers that have shafts are surprisingly difficult to find, especially at a good price. 
+                            This one checks the boxes for what I need. It is surface mount, it has a shaft that can have a knob made for it, 
+                            and it can connect to my microcontroller.
                         </td>
                     </tr>
                 </tbody>
@@ -529,136 +504,7 @@
         </div>
     </div>
 
-    <!-- Motor Dropdown -->
-    <div class="dropdown-container-alt" id="motorContainer">
-
-        <div class="dropdown" onclick="toggleTable('Motor')">Motor Selection</div>
-
-        <div id="Motor" class="hidden">
-
-            <p>For motor selection I am only looking for a few things. It needs to be easy to connect 3d printed hardware
-                to, as that is the intended interface, and it needs to be compatable with the selected motor driver, which
-                is actually very easy since the motor driver I selected is suprisingly dynamic and has plenty of tunable 
-                settings. 
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Component</th>
-                        <th>Image</th>
-                        <th>Advantages</th>
-                        <th>Disadvantages</th>
-                        <th>Hyperlink</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ROB-09238</td>
-                        <td><img src="media/Component_Selection/ROB-09238.bmp" alt="ROB Stepper" class="small-image">
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Reliable</li>
-                                <li>Used extensively for personal projects</li>
-                                <li>More than enough torque for my application</li>
-                                <li>Uses a NEMA 17 mount, so I can purchase the mount pre-manufactured</li>
-                                <li>Runs off 12V, which matches the unregulated power-input</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Designed for hobbyists, seems to have a relatively high manufacturing failure rate</li>
-                                <li>Round shaft, so set screw will be required to attach to hardware </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <a
-                                href="https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-09238/5318747">
-                                <div class="digikey-link"></div>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>MIKROE-1530</td>
-                        <td><img src="media/Component_Selection/MIKROE.bmp" alt="MikroElektronika Motor" class="small-image">
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Flattened-shaft axle making external mounting trivial</li>
-                                <li>Small form-factor allows space saving</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Runs at 5v, meaning another voltage regulator would be required</li>
-                                <li>Relatively low torque may restrict other design considerations</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <a
-                                href="https://www.digikey.com/en/products/detail/mikroelektronika/MIKROE-1530/5724295">
-                                <div class="digikey-link"></div>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Adafruit 324</td>
-                        <td><img src="media/Component_Selection/AdafruitMotor.bmp" alt="Adafruit Motor"
-                                class="small-image">
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Very popular for hobbist applications, plenty of online support </li>
-                                <li>Reliable, often used for 3d printers</li>
-                                <li>I already own plenty, which drives down manufacturing cost</li>
-                                <li>Flatted shaft makes hardware mounting fairly easy</li>
-                                <li>Requires 12v, which is the unregulated power supply input</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Larger than some alternatives</li>
-                                <li>More expensive than some alternatives</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <a
-                                href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791">
-                                <div class="digikey-link"></div>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3> My Selection </h3>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Component</th>
-                        <th>Image</th>
-                        <th>Justification</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Adafruit 324</td>
-                        <td><img src="media/Component_Selection/AdafruitMotor.bmp" alt="Adafruit Motor"
-                                class="small-image"></td>
-                        <td>Component familiarity combined with access to years of online discussion makes this the
-                            superior choice. Already owning the part helps as well, as it negates the price downside. The
-                            keyed axle makes mounting it to the 3d printed components a breeze. The only comparable option
-                            would be the ROB-09238, but familiarity has immense value to me, especially given the complexity
-                            of the motor driver selected. I would rather the motor itself be the easiest part to integrate.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
+ 
     <!-- Toggle dropdown script -->
     <script>
         function toggleTable(tableId) {
