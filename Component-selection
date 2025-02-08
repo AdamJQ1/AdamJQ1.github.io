@@ -307,7 +307,7 @@
 
         <div id="Power Regulator" class="hidden">
 
-            <p>For power regulator selection, I am looking to minimize the number of required support components, and simplify the circuit as
+            <p>For my power regulator selection, I am looking to minimize the number of required support components, and simplify the circuit as
                  much as possible. This way, debugging will be much easier because there are less areas where something could go wrong.
 
             <table>
@@ -388,16 +388,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>LM2594HVMX-3.3/NOPB</td>
-                        <td><img src="media/Component_Selection/TIRegulator.bmp" alt="TI Regulator" class="small-image">
+                        <td>REG1117-3.3</td>
+                        <td><img src="assets/images/REG1117.jpeg" alt="TI Regulator" class="small-image">
                         </td>
-                        <td>Component familiarity combined with access to the customer support line offsets the relative
-                            cost difference.
-                            While the other buck converters are ~$1, this one sits at ~$4. While that is a major jump, a
-                            reliable power
-                            supply is the backbone of a functional project. Cheaping out in this department leaves me
-                            open to far more
-                            potential problems than any other subsystem as it can lead to cascading hardware failures.
+                        <td>The main draw of this component is the simplicity. The only support components this regulator requires is 2 capacitors.
+                            It has only 3 terminals, making it a quick and simple solder job as well.
                         </td>
                     </tr>
                 </tbody>
@@ -405,22 +400,16 @@
         </div>
     </div>
 
-    <!-- Motor Driver Dropdown -->
+    <!-- Potentiometer -->
     <div class="dropdown-container" id="motordriverContainer">
 
-        <div class="dropdown" onclick="toggleTable('Motordriver')">Motor Driver Selection</div>
+        <div class="dropdown" onclick="toggleTable('Motordriver')">Potentiometers</div>
 
         <div id="Motordriver" class="hidden">
 
-            <p>For motor driver selection, I appear to be severely limited. The primary reason being that many of these
-                motor drivers come
-                pre-mounted onto daughter-boards, which require justification to use (As per the project requirements).
-                Ideally the control
-                logic is at the same voltage as the microcontroller. It also requires control over a serial
-                communication interface, which
-                doesn't seem like a difficult task, but it is actually rather difficult. Many allow tuning properties,
-                such as acceleration
-                speed over a serial interface, but operate using a pulse-step system.
+            <p>The main function of this system is to read the values from 2 potentiometers, then send that information downstream
+                to my teammate's systems. The potentiometers are also the component of the exhibit that the user will interact with. It is
+                critical that I find a good potentiometer. 
             </p>
 
             <table>
@@ -435,8 +424,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>L6470H</td>
-                        <td><img src="media/Component_Selection/l6479h.bmp" alt="MotorDriver" class="small-image">
+                        <td>MH22B-10-1K</td>
+                        <td><img src="media/Component_Selection/l6479h.bmp" alt="Potentiometer" class="small-image">
                         </td>
                         <td>
                             <ul>
