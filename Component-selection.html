@@ -556,6 +556,106 @@
             </table>
         </div>
     </div>
+    <!-- Analog Reading -->
+    <div class="dropdown-container-alt" id="powerRegulatorContainer">
+
+        <div class="dropdown" onclick="toggleTable('ADC')">Analog Reading IC</div>
+
+        <div id="ADC" class="hidden">
+
+            <p>To read the potentiometers, the readings coming from the potentiometer will be fed through an analog-to-digital converter,
+            which will then send the digital signal to the microcontroller.
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Image</th>
+                        <th>Advantages</th>
+                        <th>Disadvantages</th>
+                        <th>Hyperlink</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AD8400AR50 </td>
+                        <td><img src="assets/images/AD8400.png" alt="Analog Devices ADC" class="small-image">
+                        </td>
+                        <td>
+                            <ul>
+                                <li>low cost</li>
+                                <li>simple connections</li>
+                                <li>can connect to multiple potentiometers</li>
+                               
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Complicated extra functions </li>
+                                <li>May interfere with reading</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a
+                                href="https://www.rocelec.com/part/01t4w00000POeuQAAT-AD8400AR50?gQT=1">
+                                <div class="digikey-link"></div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ADC081C021</td>
+                        <td><img src="assets/images/ADC081C021.jpg" alt="TI ADC" class="small-image">
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Only 6 pins</li>
+                                <li>Lowest cost option</li>
+                                <li>Very simple</li>
+                                <li>I2C</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Need one for each potentiometer</li>
+                                <li>Need multiple connections to microcontroller</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a
+                                href="https://www.digikey.com/en/products/detail/texas-instruments/ADC081C021CIMKX-NOPB/1823761">
+                                <div class="digikey-link"></div>
+                            </a>
+                        </td>
+                    </tr>
+
+                    
+                    
+                </tbody>
+            </table>
+
+            <h3> My Selection </h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Image</th>
+                        <th>Justification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ADC081C021</td>
+                        <td><img src="assets/images/ADC081C021.jpg" alt="TI ADC" class="small-image">
+                        </td>
+                        <td>This ADC is the simplest solution for what I need it to do. It's low cost, simple to set up, and easier to debug.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
  
     <!-- Toggle dropdown script -->
