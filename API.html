@@ -180,7 +180,16 @@
     </style>
 </head>
 
-<div style="margin:auto; margin-left: 1vw; ">
+<h1> System API</h1>
+<pt>Our systems communicate with each other using a UART daisy chain to send and receive information between each system's microcontroller.
+The messages utilize a header/footer system to signal to the microcontrollers the start and end of a message. The headers and footers are made up of two entries each.
+All messages start with "[0x41][0x5a]" as the header and end with "[0x59][0x42]" as the footer, signaling the end of the message. 
+Following the header will be two addresses, set values used to communicate which system the message is coming from and which system the 
+message is intended for, a sort of 'from' and 'to' lines as if the messsage were a postal letter. The system IDs are listed below.
+</pt>
+<hr>
+
+<div>
     <table>
         <thead>
             <th class="message-header"> Member</th>
@@ -216,3 +225,5 @@
         </tbody>
     </table>
 </div>
+<hr>
+<pt>Below is a table of messages that will be used by my system.</pt>
