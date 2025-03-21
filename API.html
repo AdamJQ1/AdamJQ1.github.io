@@ -227,3 +227,151 @@ message is intended for, a sort of 'from' and 'to' lines as if the messsage were
 </div>
 <hr>
 <pt>Below is a table of messages that will be used by my system.</pt>
+
+<div style="padding: auto; align-content:center; width: 90vw; padding:0; margin:0;">
+    <table>
+        <thead>
+            <div style="border-color: black; border-width: 1px;">
+                <th class="message-header"> TX/RX </th>
+                <th class="message-header"> Message Name </th>
+                <th class="message-header"> Data type </th>
+                <th class="message-header"> Range </th>
+                <th class="message-header"> Size </th>
+                <th class="message-header"> Description </th>
+                <th class="message-header"> Example </th>
+            </div>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="message-content"> TX </td>
+                <td class="message-content"> Ready to Recieve </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [253] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total] </td>
+                <td class="message-content"> Notifies subsystems that ready commands can be recieved </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        <span class="self-identifier">[0x6]</span>
+                        <span class="global-message">[0x10]</span>
+                        [0xF3]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> TX </td>
+                <td class="message-content"> Initialize Clock </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [255] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total] </td>
+                <td class="message-content"> Tells all devices to start their send clock </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        <span class="self-identifier">[0x6]</span>
+                        <span class="global-message">[0x10]</span>
+                        [0xF5]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> TX </td>
+                <td class="message-content"> Emergency Stop </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [244] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total] </td>
+                <td class="message-content"> Commands all devices to cease operation </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        <span class="self-identifier">[0x6]</span>
+                        <span class="global-message">[0x10]</span>
+                        [0xF4]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> RX </td>
+                <td class="message-content"> No Report </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [0] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total]</td>
+                <td class="message-content"> Indicates to master device that no new information is available
+                </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        [0x09]
+                        <span class="self-identifier">[0x6]</span>
+                        [0x43]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> RX </td>
+                <td class="message-content"> True Airspeed </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [0-255] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total]</td>
+                <td class="message-content"> Airspeed reporting from Windspeed subsystem </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        [0x09]
+                        <span class="global-message">[0x10]</span>
+                        [0x43]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> RX </td>
+                <td class="message-content"> Airspeed Target </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [0-100] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total]</td>
+                <td class="message-content"> Airspeed dial target (Reported to web interface)</td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        [0x08]
+                        <span class="global-message">[0x10]</span>
+                        [0x44]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> RX </td>
+                <td class="message-content"> Pitch Target </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [101-201] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total]</td>
+                <td class="message-content"> Pitch dial target </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <p class="message-closespace">
+                        [0x08]
+                        <span class="global-message">[0x10]</span>
+                        [0x67]
+                    </p>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="message-content"> RX </td>
+                <td class="message-content"> Current Fan Speed </td>
+                <td class="message-content"> uint_8 </td>
+                <td class="message-content"> [0-100] </td>
+                <td class="message-content"> 8 Bits [56 Bits Total]</td>
+                <td class="message-content"> Current Fan Speed (Reported to web interface) </td>
+                <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
+                    <div class="message-closespace">
+                        [0x09] <span class="global-message">[0x10] </span>[0x2B]
+                    </div>
+                    <strong class="common-message">[0x59][0x42]</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</h3>
