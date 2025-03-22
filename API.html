@@ -193,8 +193,8 @@ message is intended for, a sort of 'from' and 'to' lines as if the messsage were
     <table>
         <thead>
             <th class="message-header"> Member</th>
-            <th class="message-header"> Subsystem</th>
-            <th class="message-header"> Address</th>
+            <th class="message-header"> System</th>
+            <th class="message-header"> Device ID</th>
         </thead>
         <tbody>
             <tr>
@@ -293,12 +293,12 @@ message is intended for, a sort of 'from' and 'to' lines as if the messsage were
                 </td>
             </tr>
             <tr>
-                <td class="message-content"> RX </td>
+                <td class="message-content"> TX </td>
                 <td class="message-content"> No Report </td>
                 <td class="message-content"> uint_8 </td>
                 <td class="message-content"> [0] </td>
                 <td class="message-content"> 8 Bits [56 Bits Total]</td>
-                <td class="message-content"> Indicates to master device that no new information is available
+                <td class="message-content"> Essentially tells master system to continue running as it is currently.
                 </td>
                 <td class="message-content"> <strong class="common-message">[0x41][0x5a]</strong>
                     <p class="message-closespace">
