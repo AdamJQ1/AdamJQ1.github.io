@@ -218,7 +218,10 @@
 <pt>
     Were I to re-do this project with my current knowlege or revisit and improve upon my current design, there are a few areas I 
     would make a point to address and fix. First and arguably most important: The way the barrel jack is wired on the current design
-causes a short. Correcting the barrel jack wiring is critical to improving the function of this system. 
+causes a short. Correcting the barrel jack wiring is critical to improving the function of this system. Secondly, adding pull-up resistors
+on the SCL and SDA lines connecting the ADCs and the microcontroller. The PIC has a togglable pull-up option on its pins, however that setting
+on its own is not enough. A higher resistance is required in order to get consistent, accurate readings. Lastly, I would need o verify that
+the power and ground planes were properly set up in Altium, as the current version of this board has problems with connectivity to those planes.
 </pt>
 
 
