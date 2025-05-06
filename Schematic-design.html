@@ -187,12 +187,23 @@
     
 
     <pt> This page documents my system schematic layout. My system is the human interface, so the main components are off-board potetiometers connected to ADCs
-         via 3-pin headers. There is a 3rd header that will be used to connect my system to the other systems downstream. </pt>
+         via 3-pin headers. The voltage regulation circuit is included at the bottom of the schematic and connects to to the controller, 
+         well as the ADCs and potentiometers. A 5-pin header is included to allow for the controller to be programed via ICSP. There are 8-pin connectors
+        included to be used for UART communication between systems. Additionally, there are 4 2-pin headers available for debugging. </pt>
 
 <hr>
 
 <div style="text-align: center;">
-    <img src="assets/images/Schematic4.png" alt="System Schematic">
+    <img src="assets/images/final_schematic.png" alt="System Schematic">
+</div>
+<hr>
+<div style="text-align: center;">
+<h3> PCB Design</h3> </div>
+<div style="text-align: center;">
+    <img src="assets/images/PCB_top.png" alt="PCB top layer hightlight">
+</div>
+<div style="text-align: center;">
+    <img src="assets/images/PCB_bottom.png" alt="PCB bottom layer highlight">
 </div>
 <hr>
 <p  style= "font-size: 10px; color: white; background: white; display: inline-block">
